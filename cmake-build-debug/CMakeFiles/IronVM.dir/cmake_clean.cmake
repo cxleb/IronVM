@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/IronVM.dir/main.c.obj"
   "CMakeFiles/IronVM.dir/iron/thread/thread.c.obj"
   "CMakeFiles/IronVM.dir/iron/vm.c.obj"
+  "CMakeFiles/IronVM.dir/iron/memory/ram.c.obj"
   "IronVM.pdb"
   "IronVM.exe"
   "IronVM.exe.manifest"

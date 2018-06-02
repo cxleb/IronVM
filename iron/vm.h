@@ -7,4 +7,6 @@
 
 #include "thread/thread.h"
 
+void execute(size_t entry);
+
 #endif //IRONVM_VM_H

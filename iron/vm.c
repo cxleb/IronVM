@@ -4,15 +4,27 @@
 
 #include "thread/thread.h"
 #include "instructions.h"
+#include "memory/ram.h"
+
+uint8_t running = 1;
 
 void execute(size_t entry){
     create_cpu(entry, 0);
+
+    while (running) {
+        for (int i = 0; i < cpuCount; i++){
+            if(!cpus[i].finished) {
+                printf("running %d: %d\n", i, cpus[i].running);
+                exeInstruction(i);
+            }
+        }
+    }
 
     end_cpu(0);
 }
 
 void exeInstruction(uint8_t cpuid){
-    uint8_t instruction = 0;//readByte(ip++);
+    uint8_t instruction = readByte(cpus[cpuid].ip++);
     //if(debug) printf("\t0x%X :0x%X\n", ip-1, instruction);
     switch(instruction) {
         case NOP:
@@ -68,7 +80,7 @@ void exeInstruction(uint8_t cpuid){
         case SYSCALL:
             break;
         default:
-            printf("Breaking Program, found unknown byte at 0x%X:0x%X\n", ip - 1, instruction);
+            printf("Breaking Program, found unknown byte at 0x%X:0x%X\n", cpus[cpuid].ip - 1, instruction);
             running = 0;
             break;
     }

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Programming/IronVM/iron/memory/ram.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/memory/ram.c.obj"
   "C:/Programming/IronVM/iron/thread/thread.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/thread/thread.c.obj"
   "C:/Programming/IronVM/iron/vm.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/vm.c.obj"
   "C:/Programming/IronVM/main.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/main.c.obj"

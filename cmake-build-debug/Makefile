@@ -122,6 +122,33 @@ IronVM/fast:
 	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/build
 .PHONY : IronVM/fast
 
+iron/memory/ram.obj: iron/memory/ram.c.obj
+
+.PHONY : iron/memory/ram.obj
+
+# target to build an object file
+iron/memory/ram.c.obj:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/ram.c.obj
+.PHONY : iron/memory/ram.c.obj
+
+iron/memory/ram.i: iron/memory/ram.c.i
+
+.PHONY : iron/memory/ram.i
+
+# target to preprocess a source file
+iron/memory/ram.c.i:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/ram.c.i
+.PHONY : iron/memory/ram.c.i
+
+iron/memory/ram.s: iron/memory/ram.c.s
+
+.PHONY : iron/memory/ram.s
+
+# target to generate assembly for a file
+iron/memory/ram.c.s:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/ram.c.s
+.PHONY : iron/memory/ram.c.s
+
 iron/thread/thread.obj: iron/thread/thread.c.obj
 
 .PHONY : iron/thread/thread.obj
@@ -212,6 +239,9 @@ help:
 	@echo ... IronVM
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... iron/memory/ram.obj
+	@echo ... iron/memory/ram.i
+	@echo ... iron/memory/ram.s
 	@echo ... iron/thread/thread.obj
 	@echo ... iron/thread/thread.i
 	@echo ... iron/thread/thread.s

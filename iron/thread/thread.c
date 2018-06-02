@@ -5,7 +5,7 @@
 #include "thread.h"
 
 iron_cpu cpus[256];
-uint8_t cpuCount = 1;
+uint8_t cpuCount = 0;
 
 void create_cpu(size_t entry, uint8_t index){
     iron_cpu cpu;
@@ -36,10 +36,12 @@ void create_cpu(size_t entry, uint8_t index){
     cpu.fp = 0; // function pointer
     cpu.ip = entry; // instruction pointer
 
-    cpu.running = 0;
+    cpu.running = 1;
     cpu.finished = 0;
 
     cpus[index] = cpu;
+
+    cpuCount++;
 }
 
 void end_cpu(uint8_t index){
