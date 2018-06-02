@@ -122,302 +122,32 @@ IronVM/fast:
 	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/build
 .PHONY : IronVM/fast
 
-iron/interpreter/interpretBranch.obj: iron/interpreter/interpretBranch.c.obj
+iron/thread/thread.obj: iron/thread/thread.c.obj
 
-.PHONY : iron/interpreter/interpretBranch.obj
-
-# target to build an object file
-iron/interpreter/interpretBranch.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretBranch.c.obj
-.PHONY : iron/interpreter/interpretBranch.c.obj
-
-iron/interpreter/interpretBranch.i: iron/interpreter/interpretBranch.c.i
-
-.PHONY : iron/interpreter/interpretBranch.i
-
-# target to preprocess a source file
-iron/interpreter/interpretBranch.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretBranch.c.i
-.PHONY : iron/interpreter/interpretBranch.c.i
-
-iron/interpreter/interpretBranch.s: iron/interpreter/interpretBranch.c.s
-
-.PHONY : iron/interpreter/interpretBranch.s
-
-# target to generate assembly for a file
-iron/interpreter/interpretBranch.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretBranch.c.s
-.PHONY : iron/interpreter/interpretBranch.c.s
-
-iron/interpreter/interpretCallRet.obj: iron/interpreter/interpretCallRet.c.obj
-
-.PHONY : iron/interpreter/interpretCallRet.obj
+.PHONY : iron/thread/thread.obj
 
 # target to build an object file
-iron/interpreter/interpretCallRet.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretCallRet.c.obj
-.PHONY : iron/interpreter/interpretCallRet.c.obj
+iron/thread/thread.c.obj:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/thread/thread.c.obj
+.PHONY : iron/thread/thread.c.obj
 
-iron/interpreter/interpretCallRet.i: iron/interpreter/interpretCallRet.c.i
+iron/thread/thread.i: iron/thread/thread.c.i
 
-.PHONY : iron/interpreter/interpretCallRet.i
-
-# target to preprocess a source file
-iron/interpreter/interpretCallRet.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretCallRet.c.i
-.PHONY : iron/interpreter/interpretCallRet.c.i
-
-iron/interpreter/interpretCallRet.s: iron/interpreter/interpretCallRet.c.s
-
-.PHONY : iron/interpreter/interpretCallRet.s
-
-# target to generate assembly for a file
-iron/interpreter/interpretCallRet.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretCallRet.c.s
-.PHONY : iron/interpreter/interpretCallRet.c.s
-
-iron/interpreter/interpretCompare.obj: iron/interpreter/interpretCompare.c.obj
-
-.PHONY : iron/interpreter/interpretCompare.obj
-
-# target to build an object file
-iron/interpreter/interpretCompare.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretCompare.c.obj
-.PHONY : iron/interpreter/interpretCompare.c.obj
-
-iron/interpreter/interpretCompare.i: iron/interpreter/interpretCompare.c.i
-
-.PHONY : iron/interpreter/interpretCompare.i
+.PHONY : iron/thread/thread.i
 
 # target to preprocess a source file
-iron/interpreter/interpretCompare.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretCompare.c.i
-.PHONY : iron/interpreter/interpretCompare.c.i
+iron/thread/thread.c.i:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/thread/thread.c.i
+.PHONY : iron/thread/thread.c.i
 
-iron/interpreter/interpretCompare.s: iron/interpreter/interpretCompare.c.s
+iron/thread/thread.s: iron/thread/thread.c.s
 
-.PHONY : iron/interpreter/interpretCompare.s
-
-# target to generate assembly for a file
-iron/interpreter/interpretCompare.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretCompare.c.s
-.PHONY : iron/interpreter/interpretCompare.c.s
-
-iron/interpreter/interpretMath.obj: iron/interpreter/interpretMath.c.obj
-
-.PHONY : iron/interpreter/interpretMath.obj
-
-# target to build an object file
-iron/interpreter/interpretMath.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretMath.c.obj
-.PHONY : iron/interpreter/interpretMath.c.obj
-
-iron/interpreter/interpretMath.i: iron/interpreter/interpretMath.c.i
-
-.PHONY : iron/interpreter/interpretMath.i
-
-# target to preprocess a source file
-iron/interpreter/interpretMath.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretMath.c.i
-.PHONY : iron/interpreter/interpretMath.c.i
-
-iron/interpreter/interpretMath.s: iron/interpreter/interpretMath.c.s
-
-.PHONY : iron/interpreter/interpretMath.s
+.PHONY : iron/thread/thread.s
 
 # target to generate assembly for a file
-iron/interpreter/interpretMath.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretMath.c.s
-.PHONY : iron/interpreter/interpretMath.c.s
-
-iron/interpreter/interpretMemory.obj: iron/interpreter/interpretMemory.c.obj
-
-.PHONY : iron/interpreter/interpretMemory.obj
-
-# target to build an object file
-iron/interpreter/interpretMemory.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretMemory.c.obj
-.PHONY : iron/interpreter/interpretMemory.c.obj
-
-iron/interpreter/interpretMemory.i: iron/interpreter/interpretMemory.c.i
-
-.PHONY : iron/interpreter/interpretMemory.i
-
-# target to preprocess a source file
-iron/interpreter/interpretMemory.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretMemory.c.i
-.PHONY : iron/interpreter/interpretMemory.c.i
-
-iron/interpreter/interpretMemory.s: iron/interpreter/interpretMemory.c.s
-
-.PHONY : iron/interpreter/interpretMemory.s
-
-# target to generate assembly for a file
-iron/interpreter/interpretMemory.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretMemory.c.s
-.PHONY : iron/interpreter/interpretMemory.c.s
-
-iron/interpreter/interpretStack.obj: iron/interpreter/interpretStack.c.obj
-
-.PHONY : iron/interpreter/interpretStack.obj
-
-# target to build an object file
-iron/interpreter/interpretStack.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretStack.c.obj
-.PHONY : iron/interpreter/interpretStack.c.obj
-
-iron/interpreter/interpretStack.i: iron/interpreter/interpretStack.c.i
-
-.PHONY : iron/interpreter/interpretStack.i
-
-# target to preprocess a source file
-iron/interpreter/interpretStack.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretStack.c.i
-.PHONY : iron/interpreter/interpretStack.c.i
-
-iron/interpreter/interpretStack.s: iron/interpreter/interpretStack.c.s
-
-.PHONY : iron/interpreter/interpretStack.s
-
-# target to generate assembly for a file
-iron/interpreter/interpretStack.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretStack.c.s
-.PHONY : iron/interpreter/interpretStack.c.s
-
-iron/interpreter/interpretSyscall.obj: iron/interpreter/interpretSyscall.c.obj
-
-.PHONY : iron/interpreter/interpretSyscall.obj
-
-# target to build an object file
-iron/interpreter/interpretSyscall.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretSyscall.c.obj
-.PHONY : iron/interpreter/interpretSyscall.c.obj
-
-iron/interpreter/interpretSyscall.i: iron/interpreter/interpretSyscall.c.i
-
-.PHONY : iron/interpreter/interpretSyscall.i
-
-# target to preprocess a source file
-iron/interpreter/interpretSyscall.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretSyscall.c.i
-.PHONY : iron/interpreter/interpretSyscall.c.i
-
-iron/interpreter/interpretSyscall.s: iron/interpreter/interpretSyscall.c.s
-
-.PHONY : iron/interpreter/interpretSyscall.s
-
-# target to generate assembly for a file
-iron/interpreter/interpretSyscall.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/interpreter/interpretSyscall.c.s
-.PHONY : iron/interpreter/interpretSyscall.c.s
-
-iron/loader/binary.obj: iron/loader/binary.c.obj
-
-.PHONY : iron/loader/binary.obj
-
-# target to build an object file
-iron/loader/binary.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/binary.c.obj
-.PHONY : iron/loader/binary.c.obj
-
-iron/loader/binary.i: iron/loader/binary.c.i
-
-.PHONY : iron/loader/binary.i
-
-# target to preprocess a source file
-iron/loader/binary.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/binary.c.i
-.PHONY : iron/loader/binary.c.i
-
-iron/loader/binary.s: iron/loader/binary.c.s
-
-.PHONY : iron/loader/binary.s
-
-# target to generate assembly for a file
-iron/loader/binary.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/binary.c.s
-.PHONY : iron/loader/binary.c.s
-
-iron/loader/ix.obj: iron/loader/ix.c.obj
-
-.PHONY : iron/loader/ix.obj
-
-# target to build an object file
-iron/loader/ix.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/ix.c.obj
-.PHONY : iron/loader/ix.c.obj
-
-iron/loader/ix.i: iron/loader/ix.c.i
-
-.PHONY : iron/loader/ix.i
-
-# target to preprocess a source file
-iron/loader/ix.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/ix.c.i
-.PHONY : iron/loader/ix.c.i
-
-iron/loader/ix.s: iron/loader/ix.c.s
-
-.PHONY : iron/loader/ix.s
-
-# target to generate assembly for a file
-iron/loader/ix.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/ix.c.s
-.PHONY : iron/loader/ix.c.s
-
-iron/memory/ram.obj: iron/memory/ram.c.obj
-
-.PHONY : iron/memory/ram.obj
-
-# target to build an object file
-iron/memory/ram.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/ram.c.obj
-.PHONY : iron/memory/ram.c.obj
-
-iron/memory/ram.i: iron/memory/ram.c.i
-
-.PHONY : iron/memory/ram.i
-
-# target to preprocess a source file
-iron/memory/ram.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/ram.c.i
-.PHONY : iron/memory/ram.c.i
-
-iron/memory/ram.s: iron/memory/ram.c.s
-
-.PHONY : iron/memory/ram.s
-
-# target to generate assembly for a file
-iron/memory/ram.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/ram.c.s
-.PHONY : iron/memory/ram.c.s
-
-iron/memory/stack.obj: iron/memory/stack.c.obj
-
-.PHONY : iron/memory/stack.obj
-
-# target to build an object file
-iron/memory/stack.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/stack.c.obj
-.PHONY : iron/memory/stack.c.obj
-
-iron/memory/stack.i: iron/memory/stack.c.i
-
-.PHONY : iron/memory/stack.i
-
-# target to preprocess a source file
-iron/memory/stack.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/stack.c.i
-.PHONY : iron/memory/stack.c.i
-
-iron/memory/stack.s: iron/memory/stack.c.s
-
-.PHONY : iron/memory/stack.s
-
-# target to generate assembly for a file
-iron/memory/stack.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/stack.c.s
-.PHONY : iron/memory/stack.c.s
+iron/thread/thread.c.s:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/thread/thread.c.s
+.PHONY : iron/thread/thread.c.s
 
 iron/vm.obj: iron/vm.c.obj
 
@@ -482,39 +212,9 @@ help:
 	@echo ... IronVM
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... iron/interpreter/interpretBranch.obj
-	@echo ... iron/interpreter/interpretBranch.i
-	@echo ... iron/interpreter/interpretBranch.s
-	@echo ... iron/interpreter/interpretCallRet.obj
-	@echo ... iron/interpreter/interpretCallRet.i
-	@echo ... iron/interpreter/interpretCallRet.s
-	@echo ... iron/interpreter/interpretCompare.obj
-	@echo ... iron/interpreter/interpretCompare.i
-	@echo ... iron/interpreter/interpretCompare.s
-	@echo ... iron/interpreter/interpretMath.obj
-	@echo ... iron/interpreter/interpretMath.i
-	@echo ... iron/interpreter/interpretMath.s
-	@echo ... iron/interpreter/interpretMemory.obj
-	@echo ... iron/interpreter/interpretMemory.i
-	@echo ... iron/interpreter/interpretMemory.s
-	@echo ... iron/interpreter/interpretStack.obj
-	@echo ... iron/interpreter/interpretStack.i
-	@echo ... iron/interpreter/interpretStack.s
-	@echo ... iron/interpreter/interpretSyscall.obj
-	@echo ... iron/interpreter/interpretSyscall.i
-	@echo ... iron/interpreter/interpretSyscall.s
-	@echo ... iron/loader/binary.obj
-	@echo ... iron/loader/binary.i
-	@echo ... iron/loader/binary.s
-	@echo ... iron/loader/ix.obj
-	@echo ... iron/loader/ix.i
-	@echo ... iron/loader/ix.s
-	@echo ... iron/memory/ram.obj
-	@echo ... iron/memory/ram.i
-	@echo ... iron/memory/ram.s
-	@echo ... iron/memory/stack.obj
-	@echo ... iron/memory/stack.i
-	@echo ... iron/memory/stack.s
+	@echo ... iron/thread/thread.obj
+	@echo ... iron/thread/thread.i
+	@echo ... iron/thread/thread.s
 	@echo ... iron/vm.obj
 	@echo ... iron/vm.i
 	@echo ... iron/vm.s

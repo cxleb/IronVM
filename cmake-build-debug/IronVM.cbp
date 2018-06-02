@@ -82,46 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Programming/IronVM/iron/interpreter/interpretBranch.c">
+		<Unit filename="C:/Programming/IronVM/iron/instructions.h">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/interpreter/interpretCallRet.c">
+		<Unit filename="C:/Programming/IronVM/iron/thread/thread.c">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/interpreter/interpretCompare.c">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/interpreter/interpretMath.c">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/interpreter/interpretMemory.c">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/interpreter/interpretStack.c">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/interpreter/interpretSyscall.c">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/loader/binary.c">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/loader/ix.c">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/loader/ixHeaders.h">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/memory/ram.c">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/memory/ram.h">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/memory/stack.c">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/memory/stack.h">
+		<Unit filename="C:/Programming/IronVM/iron/thread/thread.h">
 			<Option target="IronVM"/>
 		</Unit>
 		<Unit filename="C:/Programming/IronVM/iron/vm.c">

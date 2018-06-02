@@ -4,17 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Programming/IronVM/iron/interpreter/interpretBranch.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/interpreter/interpretBranch.c.obj"
-  "C:/Programming/IronVM/iron/interpreter/interpretCallRet.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/interpreter/interpretCallRet.c.obj"
-  "C:/Programming/IronVM/iron/interpreter/interpretCompare.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/interpreter/interpretCompare.c.obj"
-  "C:/Programming/IronVM/iron/interpreter/interpretMath.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/interpreter/interpretMath.c.obj"
-  "C:/Programming/IronVM/iron/interpreter/interpretMemory.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/interpreter/interpretMemory.c.obj"
-  "C:/Programming/IronVM/iron/interpreter/interpretStack.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/interpreter/interpretStack.c.obj"
-  "C:/Programming/IronVM/iron/interpreter/interpretSyscall.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/interpreter/interpretSyscall.c.obj"
-  "C:/Programming/IronVM/iron/loader/binary.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/loader/binary.c.obj"
-  "C:/Programming/IronVM/iron/loader/ix.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/loader/ix.c.obj"
-  "C:/Programming/IronVM/iron/memory/ram.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/memory/ram.c.obj"
-  "C:/Programming/IronVM/iron/memory/stack.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/memory/stack.c.obj"
+  "C:/Programming/IronVM/iron/thread/thread.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/thread/thread.c.obj"
   "C:/Programming/IronVM/iron/vm.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/vm.c.obj"
   "C:/Programming/IronVM/main.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/main.c.obj"
   )
