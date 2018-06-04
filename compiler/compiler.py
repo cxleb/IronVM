@@ -6,6 +6,8 @@ def compile_il():
     file.close()
     
     tokens = lexer.lex(file_contents)
+	
+	ast = parser.parse(tokens)
 
     for tok in tokens:
         print(tok)
