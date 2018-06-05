@@ -5,7 +5,6 @@ class Parser():
 		self.position = 0
 		self.func = []
 		self.registers = ["0","1","2","3","4","5","6","7","8","9","8","9","11","12","13","14","15"]
-	
 
 	def check_ident(self, str):
 		outcome = True
@@ -28,13 +27,7 @@ class Parser():
 		else:
 			return register
 	
-	def check_register_assignment(self):
-		reg1 = self.check_register_token()
-			
-		char = self.get_next_token()
-		if char != '=' :
-			raise Exception("Error: Found unknown character in register assignment: "+char)
-			
+	def check_assignment(self, reg1):
 		equals = self.get_next_token()
 		if equals == "@":
 			reg2 = self.check_register_token()
@@ -43,6 +36,69 @@ class Parser():
 			self.func.append(["movc", reg1, equals])
 		else:
 			raise Exception("Error: Found unknown character in register assignment: "+equals)
+			
+	def check_add(self, reg1):
+		equals = self.get_next_token()
+		if equals == "@":
+			reg2 = self.check_register_token()
+			self.func.append(["add", reg2, reg1])
+		else:
+			raise Exception("Error: Found unknown character in add statement: "+equals)
+			
+	def check_sub(self, reg1):
+		equals = self.get_next_token()
+		if equals == "@":
+			reg2 = self.check_register_token()
+			self.func.append(["sub", reg2, reg1])
+		else:
+			raise Exception("Error: Found unknown character in minus statement: "+equals)
+			
+	def check_mul(self, reg1):
+		equals = self.get_next_token()
+		if equals == "@":
+			reg2 = self.check_register_token()
+			self.func.append(["mul", reg2, reg1])
+		else:
+			raise Exception("Error: Found unknown character in mul statement: "+equals)
+			
+	def check_div(self, reg1):
+		equals = self.get_next_token()
+		if equals == "@":
+			reg2 = self.check_register_token()
+			self.func.append(["div", reg2, reg1])
+		else:
+			raise Exception("Error: Found unknown character in division statement: "+equals)
+	
+	def check_register(self):
+		reg1 = self.check_register_token()
+			
+		char = self.get_next_token()
+		if char == '=' :
+			self.check_assignment(reg1)
+		elif char == '+' :
+			self.check_add(reg1)
+		elif char == '-' :
+			self.check_sub(reg1)
+		elif char == '*' :
+			self.check_mul(reg1)
+		elif char == '/' :
+			self.check_div(reg1)
+		else:
+			raise Exception("Error: Found unknown character in register statement: "+char)
+			
+	def check_identity(self, ident):
+		char = self.get_next_token()
+		if char == '=':
+			char2 = self.get_next_token()
+			if char2 == "@":
+				reg = self.check_register_token()
+				self.func.append(["store", ident, reg])
+			else:
+				raise Exception("Error: Expected register was given in literal assignment: "+char)
+		elif char == '>':
+			self.func.append(["call", ident])
+		else:
+			raise Exception("Error: Found unknown character in identity statement: "+char)
 		
 
 	def parse(self):
@@ -57,10 +113,13 @@ class Parser():
 			token = self.get_next_token()
 			if in_func :
 				if token == "}":
+					self.func.append(["ret"])
 					tree[cur_func] = self.func
 					in_func = False
 				elif token == "@":
-					self.check_register_assignment()
+					self.check_register()
+				elif self.check_ident(token):
+					self.check_identity(token)
 				else:
 					raise Exception("Found unkown token in function: "+token)
 			elif token == "{":

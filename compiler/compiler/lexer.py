@@ -1,5 +1,5 @@
 def lex(contents):
-	characters = ["{", "}", "@", "=", "+", "-", "/", "*", ":"]
+	characters = ["{", "}", "@", "=", "+", "-", "/", "*", ">"]
 
 	content = list(contents)
 	tokens = []
