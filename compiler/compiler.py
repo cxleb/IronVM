@@ -1,5 +1,6 @@
 from compiler import lexer
 from compiler.parser import Parser
+from compiler.codegen import CodeGen
 
 def compile_il():
 	file = open("test.il", "r")
@@ -9,9 +10,14 @@ def compile_il():
 	tokens = lexer.lex(file_contents)
 	
 	parser = Parser(tokens)
-	
 	ast = parser.parse()
 	
+	cg = CodeGen(ast)
+	bytes = cg.generate()
+	print(bytes)
+	
+
+def print_ast(ast):
 	for node in ast:
 		print(node+":")
 		for instruction in ast[node]:

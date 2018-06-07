@@ -95,8 +95,11 @@ class Parser():
 				self.func.append(["store", ident, reg])
 			else:
 				raise Exception("Error: Expected register was given in literal assignment: "+char)
-		elif char == '>':
-			self.func.append(["call", ident])
+		elif ident == 'call':
+			if self.check_ident(char):
+				self.func.append(["call", char])
+			else:
+				raise Exception("Error: Did not provide identity in function call: "+char)
 		else:
 			raise Exception("Error: Found unknown character in identity statement: "+char)
 		
