@@ -34,6 +34,8 @@ class Parser():
 			self.func.append(["movr", reg2, reg1])
 		elif equals.isnumeric():
 			self.func.append(["movc", reg1, equals])
+		elif self.check_ident(equals):
+			self.func.append(["load", equals, reg1])
 		else:
 			raise Exception("Error: Found unknown character in register assignment: "+equals)
 			
@@ -106,7 +108,6 @@ class Parser():
 
 	def parse(self):
 		tree = {}
-		#tree["main"] = [["movc", "1", "2"], ["movr", "2", "1"]]
 		
 		in_func = False
 		cur_func = ""
@@ -127,10 +128,13 @@ class Parser():
 					raise Exception("Found unkown token in function: "+token)
 			elif token == "{":
 				if self.check_ident(accum):
-					in_func = True
-					cur_func = accum
-					accum = ""
-					self.func = []
+					if accum in tree:
+						raise Exception("Error: function defined twice: " + accum)
+					else:
+						in_func = True
+						cur_func = accum
+						accum = ""
+						self.func = []
 			elif self.check_ident(token):
 				accum = token
 			else:

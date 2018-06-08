@@ -1,0 +1,2 @@
+all opcodes moving data are aranged in this format:
+	<opcode> <destination> <starting place> 

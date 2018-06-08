@@ -11,10 +11,15 @@ def compile_il():
 	
 	parser = Parser(tokens)
 	ast = parser.parse()
+	print_ast(ast)
 	
 	cg = CodeGen(ast)
 	bytes = cg.generate()
-	print(bytes)
+	
+	output = open("text.ix", "bw")
+	output.write(bytes)
+	output.close()
+	#print(bytes)
 	
 
 def print_ast(ast):
