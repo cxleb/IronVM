@@ -5,6 +5,7 @@ class Parser():
 		self.position = 0
 		self.func = []
 		self.registers = ["0","1","2","3","4","5","6","7","8","9","8","9","11","12","13","14","15"]
+		self.funcs = []
 
 	def check_ident(self, str):
 		outcome = True
@@ -118,6 +119,7 @@ class Parser():
 			if in_func :
 				if token == "}":
 					self.func.append(["ret"])
+					self.funcs.append(cur_func)
 					tree[cur_func] = self.func
 					in_func = False
 				elif token == "@":
@@ -140,3 +142,6 @@ class Parser():
 			else:
 				raise Exception("Error: Found unidentified token outside of function: " + token)
 		return tree
+	
+	def get_func_list(self):
+		return self.funcs

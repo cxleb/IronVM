@@ -1,11 +1,12 @@
 
 class CodeGen():
-	def __init__(self, ast):
+	def __init__(self, ast, func_list):
 		self.ast = ast
 		self.idents = []
 		self.mem_count = 0
 		self.frame = {}
 		self.funcs = {}
+		self.func_list = func_list
 		
 	def get_num_bytes(self, num):
 		b1 = num & 0xff
@@ -71,41 +72,54 @@ class CodeGen():
 				text.extend(self.get_num_bytes(pos))
 				text.append(int(ins[2]))
 			elif ins[0] == "call":
-				pos = 0
-				found = False
-				for func in self.funcs:
-					if func != ins[1]:
-						pos += len(self.funcs[func])
-					else:
-						found = True
-						break
-				
-				if found:
-					text.append(0x20)
-					text.extend(self.get_num_bytes(pos))
-				else:
-					raise Exception("Error: cannot find function: "+ins[1])
-					
+				text.append("call")
+				text.append(ins[1])
 			elif ins[0] == "ret":
 				text.append(0x21)
 		self.funcs[name] = text
-			
-			
+	
+	def adjust_call(self, func):
+		count = 0
+		while count < len(self.funcs[func]):
+			if self.funcs[func][count] == "call":
+				self.funcs[func][count] = 0x20
+				count += 1
+				name = self.funcs[func][count]
+				found=False
+				pos=0
+				for clazz in self.func_list:
+					if clazz != name:
+						pos += len(self.funcs[clazz])
+					else:
+						found = True
+						break
+				if not found:
+					raise Exception("Error: cannot find function: "+name)
+				nums = self.get_num_bytes(pos)
+				self.funcs[func][count] = nums[0]
+				count += 1
+				self.funcs[func].insert(count, nums[1])
+				count += 1
+				self.funcs[func].insert(count, nums[2])
+				count += 1
+				self.funcs[func].insert(count, nums[3])
+			count += 1
 		
 	def generate(self):
 		header = [73, 88, 1] # magic_1 , magic_2, version_num
 		text = []
 		
-		for func in self.ast:
+		for func in self.func_list:
 			print(func)
 			self.compile_func(func)
 			
-		for func in self.funcs:
+		for func in self.func_list:
+			self.adjust_call(func)
 			text.extend(self.funcs[func])
-			
+		
 		entry = 0
 		found = False
-		for func in self.funcs:
+		for func in self.func_list:
 			if func != "main":
 				entry += len(self.funcs[func])
 			else:
@@ -113,8 +127,10 @@ class CodeGen():
 				break
 		if not found:
 			raise Exception("Error: cannot find main function!")
+			
+		print(entry)
 		
 		bytes = []
 		bytes.extend(header)
-		bytes.extend(text)
+		bytes.extend(text)			
 		return bytearray(bytes)
