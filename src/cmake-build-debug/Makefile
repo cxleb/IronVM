@@ -47,10 +47,10 @@ RM = "C:\Program Files (x86)\JetBrains\CLion 2016.3.2\bin\cmake\bin\cmake.exe" -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Programming\IronVM
+CMAKE_SOURCE_DIR = C:\Programming\IronVM\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Programming\IronVM\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Programming\IronVM\src\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Programming\IronVM\cmake-build-debug\CMakeFiles C:\Programming\IronVM\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Programming\IronVM\src\cmake-build-debug\CMakeFiles C:\Programming\IronVM\src\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Programming\IronVM\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Programming\IronVM\src\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,59 +122,86 @@ IronVM/fast:
 	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/build
 .PHONY : IronVM/fast
 
-iron/memory/ram.obj: iron/memory/ram.c.obj
+iron/core/instance.obj: iron/core/instance.c.obj
 
-.PHONY : iron/memory/ram.obj
-
-# target to build an object file
-iron/memory/ram.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/ram.c.obj
-.PHONY : iron/memory/ram.c.obj
-
-iron/memory/ram.i: iron/memory/ram.c.i
-
-.PHONY : iron/memory/ram.i
-
-# target to preprocess a source file
-iron/memory/ram.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/ram.c.i
-.PHONY : iron/memory/ram.c.i
-
-iron/memory/ram.s: iron/memory/ram.c.s
-
-.PHONY : iron/memory/ram.s
-
-# target to generate assembly for a file
-iron/memory/ram.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/ram.c.s
-.PHONY : iron/memory/ram.c.s
-
-iron/thread/thread.obj: iron/thread/thread.c.obj
-
-.PHONY : iron/thread/thread.obj
+.PHONY : iron/core/instance.obj
 
 # target to build an object file
-iron/thread/thread.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/thread/thread.c.obj
-.PHONY : iron/thread/thread.c.obj
+iron/core/instance.c.obj:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/instance.c.obj
+.PHONY : iron/core/instance.c.obj
 
-iron/thread/thread.i: iron/thread/thread.c.i
+iron/core/instance.i: iron/core/instance.c.i
 
-.PHONY : iron/thread/thread.i
+.PHONY : iron/core/instance.i
 
 # target to preprocess a source file
-iron/thread/thread.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/thread/thread.c.i
-.PHONY : iron/thread/thread.c.i
+iron/core/instance.c.i:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/instance.c.i
+.PHONY : iron/core/instance.c.i
 
-iron/thread/thread.s: iron/thread/thread.c.s
+iron/core/instance.s: iron/core/instance.c.s
 
-.PHONY : iron/thread/thread.s
+.PHONY : iron/core/instance.s
 
 # target to generate assembly for a file
-iron/thread/thread.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/thread/thread.c.s
-.PHONY : iron/thread/thread.c.s
+iron/core/instance.c.s:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/instance.c.s
+.PHONY : iron/core/instance.c.s
+
+iron/loader/ix_loader.obj: iron/loader/ix_loader.c.obj
+
+.PHONY : iron/loader/ix_loader.obj
+
+# target to build an object file
+iron/loader/ix_loader.c.obj:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj
+.PHONY : iron/loader/ix_loader.c.obj
+
+iron/loader/ix_loader.i: iron/loader/ix_loader.c.i
+
+.PHONY : iron/loader/ix_loader.i
+
+# target to preprocess a source file
+iron/loader/ix_loader.c.i:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.i
+.PHONY : iron/loader/ix_loader.c.i
+
+iron/loader/ix_loader.s: iron/loader/ix_loader.c.s
+
+.PHONY : iron/loader/ix_loader.s
+
+# target to generate assembly for a file
+iron/loader/ix_loader.c.s:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.s
+.PHONY : iron/loader/ix_loader.c.s
+
+iron/memory/mman.obj: iron/memory/mman.c.obj
+
+.PHONY : iron/memory/mman.obj
+
+# target to build an object file
+iron/memory/mman.c.obj:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/mman.c.obj
+.PHONY : iron/memory/mman.c.obj
+
+iron/memory/mman.i: iron/memory/mman.c.i
+
+.PHONY : iron/memory/mman.i
+
+# target to preprocess a source file
+iron/memory/mman.c.i:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/mman.c.i
+.PHONY : iron/memory/mman.c.i
+
+iron/memory/mman.s: iron/memory/mman.c.s
+
+.PHONY : iron/memory/mman.s
+
+# target to generate assembly for a file
+iron/memory/mman.c.s:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/mman.c.s
+.PHONY : iron/memory/mman.c.s
 
 iron/vm.obj: iron/vm.c.obj
 
@@ -239,12 +266,15 @@ help:
 	@echo ... IronVM
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... iron/memory/ram.obj
-	@echo ... iron/memory/ram.i
-	@echo ... iron/memory/ram.s
-	@echo ... iron/thread/thread.obj
-	@echo ... iron/thread/thread.i
-	@echo ... iron/thread/thread.s
+	@echo ... iron/core/instance.obj
+	@echo ... iron/core/instance.i
+	@echo ... iron/core/instance.s
+	@echo ... iron/loader/ix_loader.obj
+	@echo ... iron/loader/ix_loader.i
+	@echo ... iron/loader/ix_loader.s
+	@echo ... iron/memory/mman.obj
+	@echo ... iron/memory/mman.i
+	@echo ... iron/memory/mman.s
 	@echo ... iron/vm.obj
 	@echo ... iron/vm.i
 	@echo ... iron/vm.s

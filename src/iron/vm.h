@@ -5,8 +5,9 @@
 #ifndef IRONVM_VM_H
 #define IRONVM_VM_H
 
-#include "thread/thread.h"
+#include "core/repr.h"
 
-void execute(size_t entry);
+void execute(iron_unit* unit);
+void exeInstruction(iron_unit* unit);
 
 #endif //IRONVM_VM_H

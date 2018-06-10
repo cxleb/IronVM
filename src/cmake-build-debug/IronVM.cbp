@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Programming/IronVM/cmake-build-debug"/>
+				<Option working_dir="C:/Programming/IronVM/src/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="IronVM">
-				<Option output="C:/Programming/IronVM/cmake-build-debug/IronVM.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Programming/IronVM/cmake-build-debug"/>
+				<Option output="C:/Programming/IronVM/src/cmake-build-debug/IronVM.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Programming/IronVM/src/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 IronVM"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 IronVM"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="IronVM/fast">
-				<Option output="C:/Programming/IronVM/cmake-build-debug/IronVM.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Programming/IronVM/cmake-build-debug"/>
+				<Option output="C:/Programming/IronVM/src/cmake-build-debug/IronVM.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Programming/IronVM/src/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,58 +55,67 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/4.8.1/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 IronVM/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 IronVM/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Programming/IronVM/cmake-build-debug"/>
+				<Option working_dir="C:/Programming/IronVM/src/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Programming/IronVM/cmake-build-debug"/>
+				<Option working_dir="C:/Programming/IronVM/src/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Programming/IronVM/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Programming/IronVM/iron/instructions.h">
+		<Unit filename="C:/Programming/IronVM/src/iron/core/instance.c">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/memory/ram.c">
+		<Unit filename="C:/Programming/IronVM/src/iron/core/instance.h">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/memory/ram.h">
+		<Unit filename="C:/Programming/IronVM/src/iron/core/repr.h">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/thread/thread.c">
+		<Unit filename="C:/Programming/IronVM/src/iron/instructions.h">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/thread/thread.h">
+		<Unit filename="C:/Programming/IronVM/src/iron/loader/ix_loader.c">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/vm.c">
+		<Unit filename="C:/Programming/IronVM/src/iron/loader/ix_loader.h">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/iron/vm.h">
+		<Unit filename="C:/Programming/IronVM/src/iron/memory/mman.c">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/main.c">
+		<Unit filename="C:/Programming/IronVM/src/iron/memory/mman.h">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/CMakeLists.txt">
+		<Unit filename="C:/Programming/IronVM/src/iron/vm.c">
+			<Option target="IronVM"/>
+		</Unit>
+		<Unit filename="C:/Programming/IronVM/src/iron/vm.h">
+			<Option target="IronVM"/>
+		</Unit>
+		<Unit filename="C:/Programming/IronVM/src/main.c">
+			<Option target="IronVM"/>
+		</Unit>
+		<Unit filename="C:/Programming/IronVM/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

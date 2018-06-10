@@ -1,1 +1,1 @@
-CMakeFiles/IronVM.dir/main.c.obj CMakeFiles/IronVM.dir/iron/thread/thread.c.obj CMakeFiles/IronVM.dir/iron/vm.c.obj CMakeFiles/IronVM.dir/iron/memory/ram.c.obj
+CMakeFiles/IronVM.dir/main.c.obj CMakeFiles/IronVM.dir/iron/vm.c.obj CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj CMakeFiles/IronVM.dir/iron/core/instance.c.obj CMakeFiles/IronVM.dir/iron/memory/mman.c.obj

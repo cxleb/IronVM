@@ -17,7 +17,7 @@ def compile_il():
 	cg = CodeGen(ast, funcs)
 	bytes = cg.generate()
 	
-	output = open("text.ix", "bw")
+	output = open("test.ix", "bw")
 	output.write(bytes)
 	output.close()
 	#print(bytes)

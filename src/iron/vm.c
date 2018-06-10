@@ -2,30 +2,29 @@
 // Created by caleb on 2/06/2018.
 //
 
-#include "thread/thread.h"
 #include "instructions.h"
-#include "memory/ram.h"
+#include "memory/mman.h"
 
 uint8_t running = 1;
 
-void execute(size_t entry){
-    create_cpu(entry, 0);
+void execute(iron_unit* unit){
 
     while (running) {
-        for (int i = 0; i < cpuCount; i++){
-            if(!cpus[i].finished) {
-                printf("running %d: %d\n", i, cpus[i].running);
-                exeInstruction(i);
-            }
+        //for (int i = 0; i < cpuCount; i++){
+        //    if(!cpus[i].finished) {
+        //        printf("running %d: %d\n", i, cpus[i].running);
+                exeInstruction(unit);
+        //    }
+        //}
+        if(unit->main_thread.frames == 0){
+            running = 0;
         }
     }
-
-    end_cpu(0);
 }
 
-void exeInstruction(uint8_t cpuid){
-    uint8_t instruction = readByte(cpus[cpuid].ip++);
-    //if(debug) printf("\t0x%X :0x%X\n", ip-1, instruction);
+void exeInstruction(iron_unit* unit){
+    uint8_t instruction = read_prog_byte(unit, unit->main_thread.ip++);
+    if(1) printf("\t0x%X :0x%X\n", unit->main_thread.ip-1, instruction);
     switch(instruction) {
         case NOP:
             break;
@@ -76,11 +75,12 @@ void exeInstruction(uint8_t cpuid){
         case CALL:
             break;
         case RET:
+            running = 0;
             break;
         case SYSCALL:
             break;
         default:
-            printf("Breaking Program, found unknown byte at 0x%X:0x%X\n", cpus[cpuid].ip - 1, instruction);
+            printf("Breaking Program, found unknown byte at 0x%X:0x%X\n", unit->main_thread.ip - 1, instruction);
             running = 0;
             break;
     }

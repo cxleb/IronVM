@@ -110,6 +110,7 @@ class CodeGen():
 		text = []
 		
 		for func in self.func_list:
+			print(func)
 			self.compile_func(func)
 			
 		for func in self.func_list:

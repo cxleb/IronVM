@@ -4,10 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Programming/IronVM/iron/memory/ram.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/memory/ram.c.obj"
-  "C:/Programming/IronVM/iron/thread/thread.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/thread/thread.c.obj"
-  "C:/Programming/IronVM/iron/vm.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/iron/vm.c.obj"
-  "C:/Programming/IronVM/main.c" "C:/Programming/IronVM/cmake-build-debug/CMakeFiles/IronVM.dir/main.c.obj"
+  "C:/Programming/IronVM/src/iron/core/instance.c" "C:/Programming/IronVM/src/cmake-build-debug/CMakeFiles/IronVM.dir/iron/core/instance.c.obj"
+  "C:/Programming/IronVM/src/iron/loader/ix_loader.c" "C:/Programming/IronVM/src/cmake-build-debug/CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj"
+  "C:/Programming/IronVM/src/iron/memory/mman.c" "C:/Programming/IronVM/src/cmake-build-debug/CMakeFiles/IronVM.dir/iron/memory/mman.c.obj"
+  "C:/Programming/IronVM/src/iron/vm.c" "C:/Programming/IronVM/src/cmake-build-debug/CMakeFiles/IronVM.dir/iron/vm.c.obj"
+  "C:/Programming/IronVM/src/main.c" "C:/Programming/IronVM/src/cmake-build-debug/CMakeFiles/IronVM.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -1,9 +1,9 @@
 //
-// Created by caleb on 2/06/2018.
+// Created by caleb on 10/06/2018.
 //
 
-#ifndef IRONVM_CPU_H
-#define IRONVM_CPU_H
+#ifndef IRONVM_REPR_H
+#define IRONVM_REPR_H
 
 #include <stdint.h>
 #include <stdio.h>
@@ -31,20 +31,17 @@ typedef struct iron_cpu{
     uint32_t g13; // gp 13
     uint32_t g14; // gp 14
     uint32_t g15; // gp 15
-    uint32_t sa1; // string address 1
-    uint32_t sa2; // string adress 2
-    uint32_t fp; // function pointer
-    size_t ip; // instruction pointer
-
-    uint8_t running; // tell us if the thread is running
-    uint8_t finished; // tells us if the the thread is over;
-
 } iron_cpu;
 
-void create_cpu(size_t entry, uint8_t index);
-void end_cpu(uint8_t index);
+typedef struct iron_thread{
+    iron_cpu cpu; //
+    size_t ip; // instruction pointer
+    uint8_t frames;
+} iron_thread;
 
-iron_cpu cpus[256];
-uint8_t cpuCount;
+typedef struct iron_unit{
+    uint8_t* text; // this is program itself
+    iron_thread main_thread;
+}iron_unit;
 
-#endif //IRONVM_CPU_H
+#endif //IRONVM_REPR_H
