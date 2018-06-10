@@ -32,6 +32,13 @@
 *.dSYM/
 
 # =========================
+# Project specific stuff
+# =========================
+cmake-build-debug
+.idea
+__pycache__
+
+# =========================
 # Operating System Files
 # =========================
 

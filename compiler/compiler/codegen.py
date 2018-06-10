@@ -106,11 +106,10 @@ class CodeGen():
 			count += 1
 		
 	def generate(self):
-		header = [73, 88, 1] # magic_1 , magic_2, version_num
+		header = [73, 88, 69, 1] # magic_1 , magic_2, version_num
 		text = []
 		
 		for func in self.func_list:
-			print(func)
 			self.compile_func(func)
 			
 		for func in self.func_list:
@@ -127,7 +126,12 @@ class CodeGen():
 				break
 		if not found:
 			raise Exception("Error: cannot find main function!")
-			
+		
+		header.extend(self.get_num_bytes(entry))
+		header.extend(self.get_num_bytes(16))
+		header.extend(self.get_num_bytes(len(text)))
+		
+		
 		print(entry)
 		
 		bytes = []
