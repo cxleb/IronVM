@@ -17,6 +17,8 @@ stdint.h
 -
 stdlib.h
 -
+../memory/gc.h
+C:/Programming/IronVM/src/iron/memory/gc.h
 
 C:/Programming/IronVM/src/iron/core/loader.c
 iron.h
@@ -37,8 +39,20 @@ C:/Programming/IronVM/src/iron/instructions.h
 C:/Programming/IronVM/src/iron/memory/gc.c
 stdint.h
 -
+gc.h
+C:/Programming/IronVM/src/iron/memory/gc.h
+../core/iron.h
+C:/Programming/IronVM/src/iron/core/iron.h
 malloc.h
 -
+stdio.h
+-
+
+C:/Programming/IronVM/src/iron/memory/gc.h
+stdint.h
+-
+../core/iron.h
+C:/Programming/IronVM/src/iron/core/iron.h
 
 C:/Programming/IronVM/src/iron/vm.c
 instructions.h
@@ -61,6 +75,8 @@ iron/vm.h
 C:/Programming/IronVM/src/iron/vm.h
 iron/core/loader.h
 C:/Programming/IronVM/src/iron/core/loader.h
+iron/memory/gc.h
+C:/Programming/IronVM/src/iron/memory/gc.h
 iron/core/iron.h
 C:/Programming/IronVM/src/iron/core/iron.h
 

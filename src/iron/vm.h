@@ -7,7 +7,7 @@
 
 #include "core/iron.h"
 
-void execute(iron_module* unit);
-void exeInstruction(iron_module* unit);
+void execute(iron_module* module);
+void exeInstruction(iron_module* module);
 
 #endif //IRONVM_VM_H

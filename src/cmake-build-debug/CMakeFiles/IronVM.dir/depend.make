@@ -3,18 +3,24 @@
 
 CMakeFiles/IronVM.dir/iron/core/iron.c.obj: ../iron/core/iron.c
 CMakeFiles/IronVM.dir/iron/core/iron.c.obj: ../iron/core/iron.h
+CMakeFiles/IronVM.dir/iron/core/iron.c.obj: ../iron/memory/gc.h
 
 CMakeFiles/IronVM.dir/iron/core/loader.c.obj: ../iron/core/iron.h
 CMakeFiles/IronVM.dir/iron/core/loader.c.obj: ../iron/core/loader.c
+CMakeFiles/IronVM.dir/iron/core/loader.c.obj: ../iron/memory/gc.h
 
+CMakeFiles/IronVM.dir/iron/memory/gc.c.obj: ../iron/core/iron.h
 CMakeFiles/IronVM.dir/iron/memory/gc.c.obj: ../iron/memory/gc.c
+CMakeFiles/IronVM.dir/iron/memory/gc.c.obj: ../iron/memory/gc.h
 
 CMakeFiles/IronVM.dir/iron/vm.c.obj: ../iron/core/iron.h
 CMakeFiles/IronVM.dir/iron/vm.c.obj: ../iron/instructions.h
+CMakeFiles/IronVM.dir/iron/vm.c.obj: ../iron/memory/gc.h
 CMakeFiles/IronVM.dir/iron/vm.c.obj: ../iron/vm.c
 
 CMakeFiles/IronVM.dir/main.c.obj: ../iron/core/iron.h
 CMakeFiles/IronVM.dir/main.c.obj: ../iron/core/loader.h
+CMakeFiles/IronVM.dir/main.c.obj: ../iron/memory/gc.h
 CMakeFiles/IronVM.dir/main.c.obj: ../iron/vm.h
 CMakeFiles/IronVM.dir/main.c.obj: ../main.c
 

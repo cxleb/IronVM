@@ -7,6 +7,6 @@
 
 #include "iron.h"
 
-void load_ix(iron_module* unit, char* file_path);
+void load_ix(iron_module* module, char* file_path);
 
 #endif //IRONVM_IX_LOADER_H

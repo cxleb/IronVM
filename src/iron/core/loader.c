@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-void load_ix(iron_module* unit, char* file_path){
+void load_ix(iron_module* module, char* file_path){
     // make sure file exists
     if( access(file_path, F_OK) == -1){
         puts("File Doesnt Exist!");
@@ -46,9 +46,9 @@ void load_ix(iron_module* unit, char* file_path){
     uint32_t size = (uint32_t) (buff[15] << 24) | (buff[14] << 16) | (buff[13] << 8) | (buff[12]);
     printf("entry: %d, pos: %d, size: %d\n", entry, position, size);
 
-    unit->text = (uint8_t*)(buff + position);
-    unit->ip = entry;
-    unit->frames = 1;
+    module->text = (uint8_t*)(buff + position);
+    module->ip = entry;
+    module->frames = 1;
 
     // write data
     //free(buff);

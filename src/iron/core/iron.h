@@ -8,6 +8,8 @@
 #include <stdint.h>
 #include <stdlib.h>
 
+#include "../memory/gc.h"
+
 
 typedef struct iron_cpu{
     uint8_t br; // gp byte register
@@ -24,9 +26,11 @@ typedef struct iron_module{
     iron_cpu cpu; //
     size_t ip; // instruction pointer
     uint8_t frames;
+    uint32_t frame_counter;
+    gc_item *gc_dump;
 }iron_module;
 
-iron_module* create_unit();
+iron_module* create_module();
 
 
 
