@@ -5,9 +5,9 @@
 #ifndef IRONVM_VM_H
 #define IRONVM_VM_H
 
-#include "core/repr.h"
+#include "core/iron.h"
 
-void execute(iron_unit* unit);
-void exeInstruction(iron_unit* unit);
+void execute(iron_module* unit);
+void exeInstruction(iron_module* unit);
 
 #endif //IRONVM_VM_H

@@ -104,94 +104,94 @@ CMakeFiles/IronVM.dir/iron/vm.c.obj.provides: CMakeFiles/IronVM.dir/iron/vm.c.ob
 CMakeFiles/IronVM.dir/iron/vm.c.obj.provides.build: CMakeFiles/IronVM.dir/iron/vm.c.obj
 
 
-CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj: CMakeFiles/IronVM.dir/flags.make
-CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj: ../iron/loader/ix_loader.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Programming\IronVM\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\IronVM.dir\iron\loader\ix_loader.c.obj   -c C:\Programming\IronVM\src\iron\loader\ix_loader.c
+CMakeFiles/IronVM.dir/iron/core/loader.c.obj: CMakeFiles/IronVM.dir/flags.make
+CMakeFiles/IronVM.dir/iron/core/loader.c.obj: ../iron/core/loader.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Programming\IronVM\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/IronVM.dir/iron/core/loader.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\IronVM.dir\iron\core\loader.c.obj   -c C:\Programming\IronVM\src\iron\core\loader.c
 
-CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Programming\IronVM\src\iron\loader\ix_loader.c > CMakeFiles\IronVM.dir\iron\loader\ix_loader.c.i
+CMakeFiles/IronVM.dir/iron/core/loader.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IronVM.dir/iron/core/loader.c.i"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Programming\IronVM\src\iron\core\loader.c > CMakeFiles\IronVM.dir\iron\core\loader.c.i
 
-CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Programming\IronVM\src\iron\loader\ix_loader.c -o CMakeFiles\IronVM.dir\iron\loader\ix_loader.c.s
+CMakeFiles/IronVM.dir/iron/core/loader.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IronVM.dir/iron/core/loader.c.s"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Programming\IronVM\src\iron\core\loader.c -o CMakeFiles\IronVM.dir\iron\core\loader.c.s
 
-CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj.requires:
+CMakeFiles/IronVM.dir/iron/core/loader.c.obj.requires:
 
-.PHONY : CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj.requires
+.PHONY : CMakeFiles/IronVM.dir/iron/core/loader.c.obj.requires
 
-CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj.provides: CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj.requires
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj.provides.build
-.PHONY : CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj.provides
+CMakeFiles/IronVM.dir/iron/core/loader.c.obj.provides: CMakeFiles/IronVM.dir/iron/core/loader.c.obj.requires
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/loader.c.obj.provides.build
+.PHONY : CMakeFiles/IronVM.dir/iron/core/loader.c.obj.provides
 
-CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj.provides.build: CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj
-
-
-CMakeFiles/IronVM.dir/iron/core/instance.c.obj: CMakeFiles/IronVM.dir/flags.make
-CMakeFiles/IronVM.dir/iron/core/instance.c.obj: ../iron/core/instance.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Programming\IronVM\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/IronVM.dir/iron/core/instance.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\IronVM.dir\iron\core\instance.c.obj   -c C:\Programming\IronVM\src\iron\core\instance.c
-
-CMakeFiles/IronVM.dir/iron/core/instance.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IronVM.dir/iron/core/instance.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Programming\IronVM\src\iron\core\instance.c > CMakeFiles\IronVM.dir\iron\core\instance.c.i
-
-CMakeFiles/IronVM.dir/iron/core/instance.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IronVM.dir/iron/core/instance.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Programming\IronVM\src\iron\core\instance.c -o CMakeFiles\IronVM.dir\iron\core\instance.c.s
-
-CMakeFiles/IronVM.dir/iron/core/instance.c.obj.requires:
-
-.PHONY : CMakeFiles/IronVM.dir/iron/core/instance.c.obj.requires
-
-CMakeFiles/IronVM.dir/iron/core/instance.c.obj.provides: CMakeFiles/IronVM.dir/iron/core/instance.c.obj.requires
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/instance.c.obj.provides.build
-.PHONY : CMakeFiles/IronVM.dir/iron/core/instance.c.obj.provides
-
-CMakeFiles/IronVM.dir/iron/core/instance.c.obj.provides.build: CMakeFiles/IronVM.dir/iron/core/instance.c.obj
+CMakeFiles/IronVM.dir/iron/core/loader.c.obj.provides.build: CMakeFiles/IronVM.dir/iron/core/loader.c.obj
 
 
-CMakeFiles/IronVM.dir/iron/memory/mman.c.obj: CMakeFiles/IronVM.dir/flags.make
-CMakeFiles/IronVM.dir/iron/memory/mman.c.obj: ../iron/memory/mman.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Programming\IronVM\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/IronVM.dir/iron/memory/mman.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\IronVM.dir\iron\memory\mman.c.obj   -c C:\Programming\IronVM\src\iron\memory\mman.c
+CMakeFiles/IronVM.dir/iron/core/iron.c.obj: CMakeFiles/IronVM.dir/flags.make
+CMakeFiles/IronVM.dir/iron/core/iron.c.obj: ../iron/core/iron.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Programming\IronVM\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/IronVM.dir/iron/core/iron.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\IronVM.dir\iron\core\iron.c.obj   -c C:\Programming\IronVM\src\iron\core\iron.c
 
-CMakeFiles/IronVM.dir/iron/memory/mman.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IronVM.dir/iron/memory/mman.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Programming\IronVM\src\iron\memory\mman.c > CMakeFiles\IronVM.dir\iron\memory\mman.c.i
+CMakeFiles/IronVM.dir/iron/core/iron.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IronVM.dir/iron/core/iron.c.i"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Programming\IronVM\src\iron\core\iron.c > CMakeFiles\IronVM.dir\iron\core\iron.c.i
 
-CMakeFiles/IronVM.dir/iron/memory/mman.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IronVM.dir/iron/memory/mman.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Programming\IronVM\src\iron\memory\mman.c -o CMakeFiles\IronVM.dir\iron\memory\mman.c.s
+CMakeFiles/IronVM.dir/iron/core/iron.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IronVM.dir/iron/core/iron.c.s"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Programming\IronVM\src\iron\core\iron.c -o CMakeFiles\IronVM.dir\iron\core\iron.c.s
 
-CMakeFiles/IronVM.dir/iron/memory/mman.c.obj.requires:
+CMakeFiles/IronVM.dir/iron/core/iron.c.obj.requires:
 
-.PHONY : CMakeFiles/IronVM.dir/iron/memory/mman.c.obj.requires
+.PHONY : CMakeFiles/IronVM.dir/iron/core/iron.c.obj.requires
 
-CMakeFiles/IronVM.dir/iron/memory/mman.c.obj.provides: CMakeFiles/IronVM.dir/iron/memory/mman.c.obj.requires
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/mman.c.obj.provides.build
-.PHONY : CMakeFiles/IronVM.dir/iron/memory/mman.c.obj.provides
+CMakeFiles/IronVM.dir/iron/core/iron.c.obj.provides: CMakeFiles/IronVM.dir/iron/core/iron.c.obj.requires
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/iron.c.obj.provides.build
+.PHONY : CMakeFiles/IronVM.dir/iron/core/iron.c.obj.provides
 
-CMakeFiles/IronVM.dir/iron/memory/mman.c.obj.provides.build: CMakeFiles/IronVM.dir/iron/memory/mman.c.obj
+CMakeFiles/IronVM.dir/iron/core/iron.c.obj.provides.build: CMakeFiles/IronVM.dir/iron/core/iron.c.obj
+
+
+CMakeFiles/IronVM.dir/iron/memory/gc.c.obj: CMakeFiles/IronVM.dir/flags.make
+CMakeFiles/IronVM.dir/iron/memory/gc.c.obj: ../iron/memory/gc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Programming\IronVM\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/IronVM.dir/iron/memory/gc.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\IronVM.dir\iron\memory\gc.c.obj   -c C:\Programming\IronVM\src\iron\memory\gc.c
+
+CMakeFiles/IronVM.dir/iron/memory/gc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/IronVM.dir/iron/memory/gc.c.i"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Programming\IronVM\src\iron\memory\gc.c > CMakeFiles\IronVM.dir\iron\memory\gc.c.i
+
+CMakeFiles/IronVM.dir/iron/memory/gc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/IronVM.dir/iron/memory/gc.c.s"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Programming\IronVM\src\iron\memory\gc.c -o CMakeFiles\IronVM.dir\iron\memory\gc.c.s
+
+CMakeFiles/IronVM.dir/iron/memory/gc.c.obj.requires:
+
+.PHONY : CMakeFiles/IronVM.dir/iron/memory/gc.c.obj.requires
+
+CMakeFiles/IronVM.dir/iron/memory/gc.c.obj.provides: CMakeFiles/IronVM.dir/iron/memory/gc.c.obj.requires
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/gc.c.obj.provides.build
+.PHONY : CMakeFiles/IronVM.dir/iron/memory/gc.c.obj.provides
+
+CMakeFiles/IronVM.dir/iron/memory/gc.c.obj.provides.build: CMakeFiles/IronVM.dir/iron/memory/gc.c.obj
 
 
 # Object files for target IronVM
 IronVM_OBJECTS = \
 "CMakeFiles/IronVM.dir/main.c.obj" \
 "CMakeFiles/IronVM.dir/iron/vm.c.obj" \
-"CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj" \
-"CMakeFiles/IronVM.dir/iron/core/instance.c.obj" \
-"CMakeFiles/IronVM.dir/iron/memory/mman.c.obj"
+"CMakeFiles/IronVM.dir/iron/core/loader.c.obj" \
+"CMakeFiles/IronVM.dir/iron/core/iron.c.obj" \
+"CMakeFiles/IronVM.dir/iron/memory/gc.c.obj"
 
 # External object files for target IronVM
 IronVM_EXTERNAL_OBJECTS =
 
 IronVM.exe: CMakeFiles/IronVM.dir/main.c.obj
 IronVM.exe: CMakeFiles/IronVM.dir/iron/vm.c.obj
-IronVM.exe: CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj
-IronVM.exe: CMakeFiles/IronVM.dir/iron/core/instance.c.obj
-IronVM.exe: CMakeFiles/IronVM.dir/iron/memory/mman.c.obj
+IronVM.exe: CMakeFiles/IronVM.dir/iron/core/loader.c.obj
+IronVM.exe: CMakeFiles/IronVM.dir/iron/core/iron.c.obj
+IronVM.exe: CMakeFiles/IronVM.dir/iron/memory/gc.c.obj
 IronVM.exe: CMakeFiles/IronVM.dir/build.make
 IronVM.exe: CMakeFiles/IronVM.dir/linklibs.rsp
 IronVM.exe: CMakeFiles/IronVM.dir/objects1.rsp
@@ -206,9 +206,9 @@ CMakeFiles/IronVM.dir/build: IronVM.exe
 
 CMakeFiles/IronVM.dir/requires: CMakeFiles/IronVM.dir/main.c.obj.requires
 CMakeFiles/IronVM.dir/requires: CMakeFiles/IronVM.dir/iron/vm.c.obj.requires
-CMakeFiles/IronVM.dir/requires: CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj.requires
-CMakeFiles/IronVM.dir/requires: CMakeFiles/IronVM.dir/iron/core/instance.c.obj.requires
-CMakeFiles/IronVM.dir/requires: CMakeFiles/IronVM.dir/iron/memory/mman.c.obj.requires
+CMakeFiles/IronVM.dir/requires: CMakeFiles/IronVM.dir/iron/core/loader.c.obj.requires
+CMakeFiles/IronVM.dir/requires: CMakeFiles/IronVM.dir/iron/core/iron.c.obj.requires
+CMakeFiles/IronVM.dir/requires: CMakeFiles/IronVM.dir/iron/memory/gc.c.obj.requires
 
 .PHONY : CMakeFiles/IronVM.dir/requires
 

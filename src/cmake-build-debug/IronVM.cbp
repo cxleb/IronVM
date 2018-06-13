@@ -82,28 +82,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Programming/IronVM/src/iron/core/instance.c">
+		<Unit filename="C:/Programming/IronVM/src/iron/core/iron.c">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/src/iron/core/instance.h">
+		<Unit filename="C:/Programming/IronVM/src/iron/core/iron.h">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/src/iron/core/repr.h">
+		<Unit filename="C:/Programming/IronVM/src/iron/core/loader.c">
+			<Option target="IronVM"/>
+		</Unit>
+		<Unit filename="C:/Programming/IronVM/src/iron/core/loader.h">
 			<Option target="IronVM"/>
 		</Unit>
 		<Unit filename="C:/Programming/IronVM/src/iron/instructions.h">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/src/iron/loader/ix_loader.c">
+		<Unit filename="C:/Programming/IronVM/src/iron/memory/gc.c">
 			<Option target="IronVM"/>
 		</Unit>
-		<Unit filename="C:/Programming/IronVM/src/iron/loader/ix_loader.h">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/src/iron/memory/mman.c">
-			<Option target="IronVM"/>
-		</Unit>
-		<Unit filename="C:/Programming/IronVM/src/iron/memory/mman.h">
+		<Unit filename="C:/Programming/IronVM/src/iron/memory/gc.h">
 			<Option target="IronVM"/>
 		</Unit>
 		<Unit filename="C:/Programming/IronVM/src/iron/vm.c">

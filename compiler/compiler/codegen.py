@@ -15,13 +15,13 @@ class CodeGen():
 		b4 = (num >> 24) & 0xff
 		return [b1, b2, b3, b4]
 	
-	def make_ident(self, name, size):
+	def make_ident(self, name):
 		if name in self.frame:
 			return self.get_ident(name)
 		else:		
 			pos = self.mem_count
 			self.frame[name] = pos
-			self.mem_count += size
+			self.mem_count += 1
 			return pos
 			
 	def get_ident(self, name):

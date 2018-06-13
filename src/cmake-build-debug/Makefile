@@ -122,86 +122,86 @@ IronVM/fast:
 	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/build
 .PHONY : IronVM/fast
 
-iron/core/instance.obj: iron/core/instance.c.obj
+iron/core/iron.obj: iron/core/iron.c.obj
 
-.PHONY : iron/core/instance.obj
-
-# target to build an object file
-iron/core/instance.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/instance.c.obj
-.PHONY : iron/core/instance.c.obj
-
-iron/core/instance.i: iron/core/instance.c.i
-
-.PHONY : iron/core/instance.i
-
-# target to preprocess a source file
-iron/core/instance.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/instance.c.i
-.PHONY : iron/core/instance.c.i
-
-iron/core/instance.s: iron/core/instance.c.s
-
-.PHONY : iron/core/instance.s
-
-# target to generate assembly for a file
-iron/core/instance.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/instance.c.s
-.PHONY : iron/core/instance.c.s
-
-iron/loader/ix_loader.obj: iron/loader/ix_loader.c.obj
-
-.PHONY : iron/loader/ix_loader.obj
+.PHONY : iron/core/iron.obj
 
 # target to build an object file
-iron/loader/ix_loader.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.obj
-.PHONY : iron/loader/ix_loader.c.obj
+iron/core/iron.c.obj:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/iron.c.obj
+.PHONY : iron/core/iron.c.obj
 
-iron/loader/ix_loader.i: iron/loader/ix_loader.c.i
+iron/core/iron.i: iron/core/iron.c.i
 
-.PHONY : iron/loader/ix_loader.i
+.PHONY : iron/core/iron.i
 
 # target to preprocess a source file
-iron/loader/ix_loader.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.i
-.PHONY : iron/loader/ix_loader.c.i
+iron/core/iron.c.i:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/iron.c.i
+.PHONY : iron/core/iron.c.i
 
-iron/loader/ix_loader.s: iron/loader/ix_loader.c.s
+iron/core/iron.s: iron/core/iron.c.s
 
-.PHONY : iron/loader/ix_loader.s
+.PHONY : iron/core/iron.s
 
 # target to generate assembly for a file
-iron/loader/ix_loader.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/loader/ix_loader.c.s
-.PHONY : iron/loader/ix_loader.c.s
+iron/core/iron.c.s:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/iron.c.s
+.PHONY : iron/core/iron.c.s
 
-iron/memory/mman.obj: iron/memory/mman.c.obj
+iron/core/loader.obj: iron/core/loader.c.obj
 
-.PHONY : iron/memory/mman.obj
+.PHONY : iron/core/loader.obj
 
 # target to build an object file
-iron/memory/mman.c.obj:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/mman.c.obj
-.PHONY : iron/memory/mman.c.obj
+iron/core/loader.c.obj:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/loader.c.obj
+.PHONY : iron/core/loader.c.obj
 
-iron/memory/mman.i: iron/memory/mman.c.i
+iron/core/loader.i: iron/core/loader.c.i
 
-.PHONY : iron/memory/mman.i
+.PHONY : iron/core/loader.i
 
 # target to preprocess a source file
-iron/memory/mman.c.i:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/mman.c.i
-.PHONY : iron/memory/mman.c.i
+iron/core/loader.c.i:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/loader.c.i
+.PHONY : iron/core/loader.c.i
 
-iron/memory/mman.s: iron/memory/mman.c.s
+iron/core/loader.s: iron/core/loader.c.s
 
-.PHONY : iron/memory/mman.s
+.PHONY : iron/core/loader.s
 
 # target to generate assembly for a file
-iron/memory/mman.c.s:
-	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/mman.c.s
-.PHONY : iron/memory/mman.c.s
+iron/core/loader.c.s:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/core/loader.c.s
+.PHONY : iron/core/loader.c.s
+
+iron/memory/gc.obj: iron/memory/gc.c.obj
+
+.PHONY : iron/memory/gc.obj
+
+# target to build an object file
+iron/memory/gc.c.obj:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/gc.c.obj
+.PHONY : iron/memory/gc.c.obj
+
+iron/memory/gc.i: iron/memory/gc.c.i
+
+.PHONY : iron/memory/gc.i
+
+# target to preprocess a source file
+iron/memory/gc.c.i:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/gc.c.i
+.PHONY : iron/memory/gc.c.i
+
+iron/memory/gc.s: iron/memory/gc.c.s
+
+.PHONY : iron/memory/gc.s
+
+# target to generate assembly for a file
+iron/memory/gc.c.s:
+	$(MAKE) -f CMakeFiles\IronVM.dir\build.make CMakeFiles/IronVM.dir/iron/memory/gc.c.s
+.PHONY : iron/memory/gc.c.s
 
 iron/vm.obj: iron/vm.c.obj
 
@@ -266,15 +266,15 @@ help:
 	@echo ... IronVM
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... iron/core/instance.obj
-	@echo ... iron/core/instance.i
-	@echo ... iron/core/instance.s
-	@echo ... iron/loader/ix_loader.obj
-	@echo ... iron/loader/ix_loader.i
-	@echo ... iron/loader/ix_loader.s
-	@echo ... iron/memory/mman.obj
-	@echo ... iron/memory/mman.i
-	@echo ... iron/memory/mman.s
+	@echo ... iron/core/iron.obj
+	@echo ... iron/core/iron.i
+	@echo ... iron/core/iron.s
+	@echo ... iron/core/loader.obj
+	@echo ... iron/core/loader.i
+	@echo ... iron/core/loader.s
+	@echo ... iron/memory/gc.obj
+	@echo ... iron/memory/gc.i
+	@echo ... iron/memory/gc.s
 	@echo ... iron/vm.obj
 	@echo ... iron/vm.i
 	@echo ... iron/vm.s

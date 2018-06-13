@@ -32,7 +32,7 @@ class Parser():
 		equals = self.get_next_token()
 		if equals == "@":
 			reg2 = self.check_register_token()
-			self.func.append(["movr", reg2, reg1])
+			self.func.append(["movr", reg1, reg2])
 		elif equals.isnumeric():
 			self.func.append(["movc", reg1, equals])
 		elif self.check_ident(equals):

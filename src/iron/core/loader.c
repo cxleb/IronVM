@@ -2,12 +2,12 @@
 // Created by caleb on 10/06/2018.
 //
 
+#include "iron.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include "../core/repr.h"
 
-void load_ix(iron_unit* unit, char* file_path){
+void load_ix(iron_module* unit, char* file_path){
     // make sure file exists
     if( access(file_path, F_OK) == -1){
         puts("File Doesnt Exist!");
@@ -44,13 +44,13 @@ void load_ix(iron_unit* unit, char* file_path){
     uint32_t entry = (uint32_t) (buff[7] << 24) | (buff[6] << 16) | (buff[5] << 8) | (buff[4]);
     uint32_t position = (uint32_t) (buff[11] << 24) | (buff[10] << 16) | (buff[9] << 8) | (buff[8]);
     uint32_t size = (uint32_t) (buff[15] << 24) | (buff[14] << 16) | (buff[13] << 8) | (buff[12]);
-    //printf("entry: %d, pos: %d, size: %d\n", entry, position, size);
+    printf("entry: %d, pos: %d, size: %d\n", entry, position, size);
 
-    unit->text = (uint8_t*)(buff + entry);
-    unit->main_thread.ip = position;
-    unit->main_thread.frames = 1;
+    unit->text = (uint8_t*)(buff + position);
+    unit->ip = entry;
+    unit->frames = 1;
 
     // write data
-    free(buff);
+    //free(buff);
 }
 

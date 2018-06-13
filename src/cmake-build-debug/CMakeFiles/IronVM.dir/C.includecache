@@ -6,73 +6,61 @@
 
 #IncludeRegexTransform: 
 
-C:/Programming/IronVM/src/iron/core/instance.c
+C:/Programming/IronVM/src/iron/core/iron.c
 malloc.h
 -
-repr.h
-C:/Programming/IronVM/src/iron/core/repr.h
-instance.h
-C:/Programming/IronVM/src/iron/core/instance.h
+iron.h
+C:/Programming/IronVM/src/iron/core/iron.h
 
-C:/Programming/IronVM/src/iron/core/instance.h
-
-C:/Programming/IronVM/src/iron/core/repr.h
+C:/Programming/IronVM/src/iron/core/iron.h
 stdint.h
 -
-stdio.h
+stdlib.h
 -
 
-C:/Programming/IronVM/src/iron/instructions.h
-
-C:/Programming/IronVM/src/iron/loader/ix_loader.c
+C:/Programming/IronVM/src/iron/core/loader.c
+iron.h
+C:/Programming/IronVM/src/iron/core/iron.h
 stdio.h
 -
 stdlib.h
 -
 unistd.h
 -
-../core/repr.h
-C:/Programming/IronVM/src/iron/core/repr.h
 
-C:/Programming/IronVM/src/iron/loader/ix_loader.h
-../core/repr.h
-C:/Programming/IronVM/src/iron/core/repr.h
+C:/Programming/IronVM/src/iron/core/loader.h
+iron.h
+C:/Programming/IronVM/src/iron/core/iron.h
 
-C:/Programming/IronVM/src/iron/memory/mman.c
-stdlib.h
--
+C:/Programming/IronVM/src/iron/instructions.h
+
+C:/Programming/IronVM/src/iron/memory/gc.c
 stdint.h
 -
-../core/repr.h
-C:/Programming/IronVM/src/iron/core/repr.h
-
-C:/Programming/IronVM/src/iron/memory/mman.h
-stdlib.h
+malloc.h
 -
-stdint.h
--
-../core/repr.h
-C:/Programming/IronVM/src/iron/core/repr.h
 
 C:/Programming/IronVM/src/iron/vm.c
 instructions.h
 C:/Programming/IronVM/src/iron/instructions.h
-memory/mman.h
-C:/Programming/IronVM/src/iron/memory/mman.h
+core/iron.h
+C:/Programming/IronVM/src/iron/core/iron.h
+stdio.h
+-
+stdint.h
+-
 
 C:/Programming/IronVM/src/iron/vm.h
-core/repr.h
-C:/Programming/IronVM/src/iron/core/repr.h
+core/iron.h
+C:/Programming/IronVM/src/iron/core/iron.h
 
 C:/Programming/IronVM/src/main.c
 stdlib.h
 -
 iron/vm.h
 C:/Programming/IronVM/src/iron/vm.h
-iron/loader/ix_loader.h
-C:/Programming/IronVM/src/iron/loader/ix_loader.h
-iron/core/instance.h
-C:/Programming/IronVM/src/iron/core/instance.h
-iron/core/repr.h
-C:/Programming/IronVM/src/iron/core/repr.h
+iron/core/loader.h
+C:/Programming/IronVM/src/iron/core/loader.h
+iron/core/iron.h
+C:/Programming/IronVM/src/iron/core/iron.h
 

@@ -9,9 +9,6 @@
 
 #define MOVR   0x01
 #define MOVC   0x02
-#define MOVS1  0x03
-#define MOVS2  0x04
-#define MOVB   0x05
 #define STR    0x06
 #define LOD    0x07
 #define CMP    0x08
