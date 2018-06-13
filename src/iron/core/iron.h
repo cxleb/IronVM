@@ -8,8 +8,13 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#include "../memory/gc.h"
+//#include "../memory/gc.h"
 
+typedef struct gc_item{
+    uint8_t type;
+    uint32_t frame_origin;
+    uint32_t data;
+}gc_item;
 
 typedef struct iron_cpu{
     uint8_t br; // gp byte register

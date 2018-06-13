@@ -4,6 +4,7 @@
 
 #include "instructions.h"
 #include "core/iron.h"
+#include "memory/gc.h"
 #include <stdio.h>
 #include <stdint.h>
 
@@ -52,6 +53,7 @@ void exeInstruction(iron_module* module){
             module->cpu.g_reg[read_byte(module)] = read_dword(module);
             break;
         case STR:
+            gc_alloc_int(module, read_dword(module), read_dword(module));
             break;
         case LOD:
             break;
