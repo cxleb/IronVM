@@ -42,6 +42,7 @@ void execute(iron_module* module){
 
 void exeInstruction(iron_module* module){
     uint8_t instruction = read_byte(module);
+    uint8_t clazz = 0;
     if(1) printf("\t0x%X :0x%X\n", module->ip-1, instruction);
     switch(instruction) {
         case NOP:
@@ -56,16 +57,25 @@ void exeInstruction(iron_module* module){
             gc_alloc_int(module, read_dword(module), read_dword(module));
             break;
         case LOD:
+            module->cpu.g_reg[read_byte(module)] = gc_get_int(module, read_dword(module));
             break;
         case CMP:
             break;
         case ADD:
+            clazz = read_byte(module);
+            module->cpu.g_reg[clazz] = module->cpu.g_reg[clazz] + module->cpu.g_reg[read_byte(module)];
             break;
         case SUB:
+            clazz = read_byte(module);
+            module->cpu.g_reg[clazz] = module->cpu.g_reg[clazz] - module->cpu.g_reg[read_byte(module)];
             break;
         case MUL:
+            clazz = read_byte(module);
+            module->cpu.g_reg[clazz] = module->cpu.g_reg[clazz] * module->cpu.g_reg[read_byte(module)];
             break;
         case DIV:
+            clazz = read_byte(module);
+            module->cpu.g_reg[clazz] = module->cpu.g_reg[clazz] / module->cpu.g_reg[read_byte(module)];
             break;
         case DEC:
             break;
