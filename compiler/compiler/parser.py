@@ -44,7 +44,7 @@ class Parser():
 		equals = self.get_next_token()
 		if equals == "@":
 			reg2 = self.check_register_token()
-			self.func.append(["add", reg2, reg1])
+			self.func.append(["add", reg1, reg2])
 		else:
 			raise Exception("Error: Found unknown character in add statement: "+equals)
 			
@@ -52,7 +52,7 @@ class Parser():
 		equals = self.get_next_token()
 		if equals == "@":
 			reg2 = self.check_register_token()
-			self.func.append(["sub", reg2, reg1])
+			self.func.append(["sub", reg1, reg2])
 		else:
 			raise Exception("Error: Found unknown character in minus statement: "+equals)
 			
@@ -60,7 +60,7 @@ class Parser():
 		equals = self.get_next_token()
 		if equals == "@":
 			reg2 = self.check_register_token()
-			self.func.append(["mul", reg2, reg1])
+			self.func.append(["mul", reg1, reg2])
 		else:
 			raise Exception("Error: Found unknown character in mul statement: "+equals)
 			
@@ -68,7 +68,7 @@ class Parser():
 		equals = self.get_next_token()
 		if equals == "@":
 			reg2 = self.check_register_token()
-			self.func.append(["div", reg2, reg1])
+			self.func.append(["div", reg1, reg2])
 		else:
 			raise Exception("Error: Found unknown character in division statement: "+equals)
 	

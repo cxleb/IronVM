@@ -37,6 +37,8 @@ C:/Programming/IronVM/src/iron/instructions.h
 C:/Programming/IronVM/src/iron/memory/gc.c
 stdint.h
 -
+stdio.h
+-
 gc.h
 C:/Programming/IronVM/src/iron/memory/gc.h
 
@@ -51,6 +53,8 @@ instructions.h
 C:/Programming/IronVM/src/iron/instructions.h
 core/iron.h
 C:/Programming/IronVM/src/iron/core/iron.h
+memory/gc.h
+C:/Programming/IronVM/src/iron/memory/gc.h
 stdio.h
 -
 stdint.h

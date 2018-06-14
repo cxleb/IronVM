@@ -14,6 +14,7 @@ CMakeFiles/IronVM.dir/iron/memory/gc.c.obj
 CMakeFiles/IronVM.dir/iron/vm.c.obj
  C:/Programming/IronVM/src/iron/core/iron.h
  C:/Programming/IronVM/src/iron/instructions.h
+ C:/Programming/IronVM/src/iron/memory/gc.h
  C:/Programming/IronVM/src/iron/vm.c
 CMakeFiles/IronVM.dir/main.c.obj
  C:/Programming/IronVM/src/iron/core/iron.h

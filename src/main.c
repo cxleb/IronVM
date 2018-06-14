@@ -12,9 +12,8 @@ int main() {
     load_ix(module, "C:\\Programming\\IronVM\\compiler\\test.ix");
 
     gc_init(module);
-    gc_alloc_int(module, 0, 87);
 
-    //execute(module);
+    execute(module);
 
     free(module);
     return 0;
